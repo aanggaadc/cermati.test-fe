@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  margin: 5px 0;
+}
+
 #hero {
     width: 100%;
     height: 100vh;
@@ -6,21 +15,24 @@
     overflow: hidden;
     position: relative;
   }
-  @media (min-width: 1024px) {
+
+@media (min-width: 1024px) {
     #hero {
       background-attachment: fixed;
     }
   }
-  #hero:before {
+
+#hero:before {
     content: "";
-    background: rgba(0, 27, 58, 0.75);
+    background: rgba(0, 27, 58, 0.8);
     position: absolute;
     bottom: 0;
     top: 0;
     left: 0;
     right: 0;
   }
-  #hero .hero-container {
+
+#hero .hero-container {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -38,8 +50,8 @@
     position: absolute;
     z-index: 999;
     width: 50px;
-    left: 10px;
-    top: 10px;
+    left: 20px;
+    top: 20px;
   }
 
   @media (max-width: 991px) {
@@ -47,28 +59,44 @@
       top: 70px;
     }
   }
+
   #hero h1 {
     color: #fff;
     font-family: "Raleway", sans-serif;
-    font-size: 56px;
-    font-weight: 600;
-    padding-bottom: 0px;
+    margin: 2px 0;
   }
+
+  #hero h2 {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    margin: 2px 0;
+  }
+
+  #hero p {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    margin: 3px 0;
+    font-weight: 100px;
+  }
+
   @media (max-width: 991px) {
     #hero h1 {
       font-size: 34px;
     }
   }
+
   #hero p {
     color: #ebebeb;
     font-weight: 700;
     font-size: 20px;
   }
+
   @media (max-width: 991px) {
     #hero p {
       font-size: 16px;
     }
   }
+
   #hero .contact-btn {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
@@ -77,14 +105,133 @@
     padding: 15px 20px;
     transition: 0.5s;
     line-height: 1;
-    margin: 10px;
+    margin: 20px;
     color: #fff;
     animation-delay: 0.8s;
     border: 2px solid #fff;
     text-decoration: none;
     border-radius: 5px;
   }
+
   #hero .contact-btn:hover {
     background: #fff;
-    color: rgba(255, 255, 255, 0.9)
+    color: rgb(0, 27, 58);
+  }
+
+  #panel {
+    background-color: #E5E5E5;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  #panel .panel-container {
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .panel-container {
+      max-width: 720px; } 
+    }
+  @media only screen and (min-width: 992px) {
+    .panel-container {
+      max-width: 960px; } 
+    }
+  @media only screen and (min-width: 1200px) {
+    .panel-container {
+      max-width: 1170px; } 
+    }
+
+  .panel-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 200px;
+    margin-bottom: 40px;
+  }
+
+  .panel-header h1{
+    font-size: 30px;
+    margin: 10px;
+    color: #393f41; 
+  }
+
+  .panel-header p{
+    font-size: 18px;
+    margin: 5px;
+    text-align: center;   
+    color: #4D5356; 
+  }
+
+  .panel-content{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; 
+  }
+
+  .content-left{
+    flex: 0 0 28.6%;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    margin-right: 10px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+  }
+
+  .content-middle{
+    flex: 0 0 28.6%;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+  }
+
+  .content-right{
+    flex: 0 0 28.6%;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    margin-left: 10px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+  }
+
+  .content-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .panel-content p {
+    font-size: 13px;
+    color: #4D5356;
+  }
+
+  .content-title h3 {
+    margin: 5px 0;
+    color: #43484b;
+  }
+
+  .content-title img{
+    width: 30px;
+    margin-left: auto;
+  }
+
+  #footer {
+    background-color: rgb(4,3,37);
+    margin: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+  }
+
+  #footer p {
+    color: #fff;
   }
