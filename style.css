@@ -14,14 +14,14 @@ p {
   top: 0;
   z-index: 1;
   overflow-y: hidden;
-	max-height: 80px;
+	height: 80px;
 	transition-property: all;
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
 
 #notification.close {
-  max-height: 0;
+  height: 0;
 }
 
 .notification-panel{
@@ -211,25 +211,50 @@ p {
     gap: 20px;
   }
 
+
   @media (max-width: 480px) {
+    #notification {
+      height: auto;
+    }
+
+    .notification-panel{
+      width: auto;
+      padding: 10px 10px;
+      margin: 0;
+      justify-content:flex-start;
+      align-items:flex-start;
+      flex-direction: column;
+    }
+
     .panel-header{
       padding: 0 20px;
     }
 
+    .panel-header h1{
+      font-size: 25px;
+    }
+
+    .panel-header p{
+      font-size: 14px;
+    }
+
     .content-left{
-      flex: 0 0 44%;
+      flex: 0 0 87.5%;
+      margin: 0 auto;
     }
 
     .content-middle{
-      flex: 0 0 44%;
+      flex: 0 0 87.5%;
+      margin: 0 auto;
     }
 
     .content-right{
-      flex: 0 0 44%;
+      flex: 0 0 87.5%;
+      margin: 0 auto;
     }
   }
 
-  @media (max-width: 960px) {
+  @media (min-width: 481px) and (max-width: 960px) {
     .panel-header{
       padding: 0 80px;
     }
