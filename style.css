@@ -336,9 +336,9 @@ p {
   }
 
   #newsletter {
-    width: 50%;
+    width: 600px;
     max-height: 150px;
-    padding: 20px 0;
+    padding: 20px 20px;
     position: fixed;
     bottom: 0px;
     left: 0;
@@ -361,7 +361,8 @@ p {
   }
 
   #newsletter .bottom-container {
-    padding: 5px 20px;
+    margin: 10px 0;
+    padding: 0px 20px;
     display: flex;
     flex-direction: row;
     align-items: center;  
