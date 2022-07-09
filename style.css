@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-p{
+p {
   margin: 5px 0;
 }
 
@@ -139,9 +139,9 @@ p{
     .panel-container {
       max-width: 960px; } 
     }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1440px) {
     .panel-container {
-      max-width: 1170px; } 
+      max-width: 1380px; } 
     }
 
   .panel-header{
@@ -171,32 +171,91 @@ p{
     margin: 0;
     display: flex;
     flex-wrap: wrap; 
+    gap: 20px;
+  }
+
+  @media (max-width: 480px) {
+    .panel-header{
+      padding: 0 20px;
+    }
+
+    .content-left{
+      flex: 0 0 44%;
+    }
+
+    .content-middle{
+      flex: 0 0 44%;
+    }
+
+    .content-right{
+      flex: 0 0 44%;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .panel-header{
+      padding: 0 80px;
+    }
+
+    .content-left{
+      flex: 0 0 44%;
+    }
+
+    .content-middle{
+      flex: 0 0 44%;
+    }
+
+    .content-right{
+      flex: 0 0 44%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .content-left{
+      flex: 0 0 28.6%;
+    }
+
+    .content-middle{
+      flex: 0 0 28.6%;
+    }
+
+    .content-right{
+      flex: 0 0 28.6%;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .content-left{
+      flex: 0 0 30%;
+    }
+
+    .content-middle{
+      flex: 0 0 30%;
+    }
+
+    .content-right{
+      flex: 0 0 30%;
+    }
   }
 
   .content-left{
-    flex: 0 0 28.6%;
     border: 1px solid #d2d2d2;
     border-radius: 3px;
-    margin-right: 10px;
     padding: 5px 15px;
     margin-bottom: 20px;
   }
 
   .content-middle{
-    flex: 0 0 28.6%;
     border: 1px solid #d2d2d2;
     border-radius: 3px;
-    margin-left: 10px;
-    margin-right: 10px;
     padding: 5px 15px;
     margin-bottom: 20px;
   }
 
   .content-right{
-    flex: 0 0 28.6%;
     border: 1px solid #d2d2d2;
     border-radius: 3px;
-    margin-left: 10px;
+    
     padding: 5px 15px;
     margin-bottom: 20px;
   }
@@ -205,6 +264,7 @@ p{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .panel-content p {
@@ -217,9 +277,10 @@ p{
     color: #43484b;
   }
 
-  .content-title img{
-    width: 30px;
+  .content-title i{
     margin-left: auto;
+    color: #A1A6A8;
+    font-size: 25px;
   }
 
   #footer {
@@ -234,4 +295,5 @@ p{
 
   #footer p {
     color: #fff;
+    font-size: 13px;
   }
