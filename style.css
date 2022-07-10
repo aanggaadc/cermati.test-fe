@@ -374,7 +374,11 @@ p {
   }
   
   #hero p {
-    font-size: 20px;
+    font-size: 15px;
+  }
+
+  #hero .contact-btn {
+    font-size: 12px;
   }
 
   .notification-panel {
@@ -433,6 +437,14 @@ p {
 }
 
 @media (min-width: 481px) and (max-width: 960px) {
+  #hero p {
+    font-size: 20px;
+  }
+
+  #hero .contact-btn {
+    font-size: 15px;
+  }
+
   .panel-header {
     padding: 0 80px;
   }
