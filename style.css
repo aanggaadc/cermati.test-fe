@@ -286,7 +286,7 @@ p {
   height: 150px;
   padding: 20px 20px;
   position: fixed;
-  bottom: 0px;
+  bottom: -350px;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -294,12 +294,12 @@ p {
   background-color: #007ac1b2;
   overflow-y: hidden;
   transition-property: all;
-  transition-duration: .5s;
+  transition-duration: 1s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
 
-#newsletter.close {
-  bottom: -190px;
+#newsletter.show {
+  bottom: 0;
 }
 
 #newsletter .upper-container {
@@ -418,16 +418,16 @@ p {
     height: auto;
   }
 
-  #newsletter.close {
-    bottom: -350px;
-  }
-
   #newsletter .bottom-container {
     flex-direction: column;
   }
 
   .bottom-container button {
     width: 100%;
+  }
+
+  #footer p {
+    font-size: 10px;
   }
 
 }
@@ -573,6 +573,10 @@ p {
 
   .content-right {
     flex: 0 0 30.86%;
+  }
+
+  #footer {
+    height: 100px;
   }
 
   #footer p {
